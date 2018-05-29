@@ -1,0 +1,16 @@
+extends layout
+
+block head
+  style.
+    a {
+      border-radius: 10px;
+      box-shadow: 0 0 2px #888;
+      display: block;
+      margin: 5px;
+      padding: 5px;
+    }
+
+block content
+  a(href='../') ..
+  each file in files
+    a(href='./'+file)= file
